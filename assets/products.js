@@ -14,7 +14,7 @@ window.CATEGORIES = [
     id: "sculpture",
     name: "Statement sculpture",
     status: "live",                     // live | soon
-    image: "",
+    image: "Test-1.HEIC",
     priceBand: "Typically £[X]-£[Y]",
     maker: "Fibreglass studios in Egypt",
     intro: "Life-size fibreglass figures and animals for gardens, homes and venues. Weatherproof finishes in any colour."
@@ -23,14 +23,14 @@ window.CATEGORIES = [
     id: "decor",
     name: "Décor and planters",
     status: "live",
-    image: "",
+    image: "Test-2.jpg",
     priceBand: "Typically £[X]-£[Y]",
     maker: "Fibreglass studios in Egypt",
     intro: "Oversized planters and sculptural décor that turn a corner into a feature. Sold singly or as sets."
   },
   {
     id: "furniture",
-    name: "Custom furniture",
+    name: "Omars a wanker",
     status: "live",
     image: "",
     priceBand: "Quoted to your spec",
