@@ -12,8 +12,8 @@
     return n;
   };
   const qs = new URLSearchParams(location.search);
-  const wa = (msg) => `https://wa.me/${S.whatsapp}?text=${encodeURIComponent(msg || "Hi, I'd like to ask about a price.")}`;
-  const price = (p) => (p.priceFrom ? `From £${Number(p.priceFrom).toLocaleString("en-GB")}` : "Ask for a price");
+  const wa = (msg) => `https://wa.me/${S.whatsapp}?text=${encodeURIComponent(msg || "Hi, I have a question.")}`;
+  const price = (p) => (p.priceFrom ? `From £${Number(p.priceFrom).toLocaleString("en-GB")}` : "Price on enquiry");
   const live = C.filter((c) => c.status === "live");
   const soon = C.filter((c) => c.status === "soon");
 
@@ -85,13 +85,13 @@
     if (list.length) grid.replaceChildren(...list.map(item));
     else {
       const box = el("div", { class: "empty stack" });
-      box.append(el("p", {}, emptyText), el("a", { class: "btn btn--main", href: "quote.html" }, "Ask for a price"));
+      box.append(el("p", {}, emptyText), el("a", { class: "btn btn--main", href: "quote.html" }, "Make an enquiry"));
       grid.replaceWith(box);
     }
   }
   const liveIds = live.map((c) => c.id);
   fillItems($("#all-items"), P.filter((p) => liveIds.includes(p.category)),
-    "We're photographing pieces at our manufacturers now. In the meantime, ask us for a price on anything in the categories above.");
+    "We're photographing pieces at our manufacturers now. In the meantime, send us an enquiry about anything in the categories above.");
 
   /* Category page */
   const catPage = $("#category-page");
@@ -117,7 +117,7 @@
     const p = P.find((x) => x.id === qs.get("id"));
     const c = p && live.find((x) => x.id === p.category);
     if (!p || !c) {
-      prod.innerHTML = `<div class="stack"><h1>We couldn't find that piece</h1><p class="lead">It may have sold out or been taken down. We can usually make something similar.</p><div class="btn-row"><a class="btn btn--main" href="shop.html">See what we make</a><a class="btn btn--line" href="quote.html">Ask for a price</a></div></div>`;
+      prod.innerHTML = `<div class="stack"><h1>We couldn't find that piece</h1><p class="lead">It may have sold out or been taken down. We can usually make something similar.</p><div class="btn-row"><a class="btn btn--main" href="shop.html">See what we make</a><a class="btn btn--line" href="quote.html">Make an enquiry</a></div></div>`;
     } else {
       document.title = `${p.name} | ${S.brand}`;
       const back = $("#p-back"); back.href = `category.html?c=${c.id}`; back.textContent = `Back to ${c.name.toLowerCase()}`;
@@ -170,8 +170,8 @@
       if (!form.checkValidity()) return form.reportValidity();
       const btn = $("button[type=submit]", form);
       btn.disabled = true; btn.textContent = "Sending...";
-      const show = (cls, text) => { status.className = `status ${cls}`; status.textContent = text; status.hidden = false; status.focus(); btn.disabled = false; btn.textContent = "Send my request"; };
-      send(form, () => show("status--ok", `Thanks, we've got it. We'll reply within ${S.replyTime} with a full price. Check your spam folder if you don't hear from us.`), (t) => show("status--err", t));
+      const show = (cls, text) => { status.className = `status ${cls}`; status.textContent = text; status.hidden = false; status.focus(); btn.disabled = false; btn.textContent = "Send my enquiry"; };
+      send(form, () => show("status--ok", `Thanks, we've got your enquiry. We'll reply within ${S.replyTime}. Check your spam folder if you don't hear from us.`), (t) => show("status--err", t));
     });
   }
 })();

@@ -55,7 +55,7 @@ window.PRODUCTS = [
     category: "statues",             // must match a category id
     name: "Garden lion",
     image: "garden-lion.jpg",        // file in /images
-    priceFrom: 450,                  // or null for "Ask for a price"
+    priceFrom: 450,                  // or null for "Price on enquiry"
     leadTime: "6-8 weeks",
     description: "A life-size lion for a garden or entrance, finished in weatherproof paint.",
     specs: { Height: "1.2m", Material: "Fibreglass", Finish: "Any colour", Use: "Indoor or outdoor" }
