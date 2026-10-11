@@ -14,7 +14,7 @@ window.CATEGORIES = [
     id: "sculpture",
     name: "Statement sculpture",
     status: "live",                     // live | soon
-    image: "Test-1.HEIC",
+    image: "Test-1.jpg",
     priceBand: "Typically £[X]-£[Y]",
     maker: "Fibreglass studios in Egypt",
     intro: "Life-size fibreglass figures and animals for gardens, homes and venues. Weatherproof finishes in any colour."
