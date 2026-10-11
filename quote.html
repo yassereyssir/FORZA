@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get a quote | [BRAND]</title>
+<meta name="description" content="Request an all-in UK price for a shop item, a custom piece or a sourcing request.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="quote">
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header"></header>
+<main id="main">
+
+<section class="section"><div class="wrap split">
+  <div class="stack">
+    <h1 style="font-size:clamp(40px,5vw,60px)">Get a quote</h1>
+    <p class="lead">Tell us what you're after. We reply within <span data-reply-time></span> with an all-in UK price, or within <span data-sourcing-time></span> for sourcing requests.</p>
+    <p>Prefer to chat? <a data-whatsapp href="#"><strong>Message us on WhatsApp</strong></a></p>
+  </div>
+  <form id="quote-form" class="form-card" method="POST" novalidate>
+    <input type="hidden" name="form" value="quote">
+    <div class="field"><label for="q-name">Your name</label><input id="q-name" name="name" type="text" autocomplete="name" required></div>
+    <div class="field"><label for="q-email">Email</label><input id="q-email" name="email" type="email" autocomplete="email" required></div>
+    <div class="field"><label for="q-phone">Phone or WhatsApp (optional)</label><input id="q-phone" name="phone" type="tel" autocomplete="tel"></div>
+    <div class="field"><label for="q-type">Request type</label>
+      <select id="q-type" name="request_type" required><option>An item from the shop</option><option>A custom version</option><option>Find me something new</option><option>A business project</option></select></div>
+    <div class="field"><label for="q-category">Category</label>
+      <select id="q-category" name="category" required><option>Something else</option></select></div>
+    <div class="field"><label for="q-piece">Item (if from the shop)</label><input id="q-piece" name="item" type="text"></div>
+    <div class="field"><label for="q-size">Size or quantity</label><input id="q-size" name="size_or_quantity" type="text" placeholder="e.g. 1.5m tall, or 20 units" required></div>
+    <div class="field"><label for="q-postcode">Delivery postcode</label><input id="q-postcode" name="postcode" type="text" autocomplete="postal-code" required></div>
+    <div class="field"><label for="q-date">Needed by (optional)</label><input id="q-date" name="needed_by" type="date"></div>
+    <div class="field"><label for="q-budget">Budget</label>
+      <select id="q-budget" name="budget" required><option value="">Choose a budget</option><option>Under £250</option><option>£250 - £500</option><option>£500 - £1,000</option><option>£1,000 - £5,000</option><option>£5,000+</option></select></div>
+    <div class="field field--full"><label for="q-brief">Describe what you want, and paste links to any reference images</label><textarea id="q-brief" name="brief" required></textarea></div>
+    <label class="check field--full"><input type="checkbox" name="rights_confirmed" value="yes" required> If I send a design, logo or character, I confirm I own it or have permission to use it.</label>
+    <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="form-status" id="form-status" role="status" tabindex="-1" hidden></div>
+    <div class="form-foot"><span style="font-size:14px;color:var(--muted)">We only use your details to reply to this request. <a href="legal.html#privacy">Privacy</a></span>
+      <button class="btn btn--primary" type="submit">Send my request</button></div>
+  </form>
+</div></section>
+
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/config.js"></script>
+<script src="assets/products.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
