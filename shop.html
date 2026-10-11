@@ -3,34 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shop | [BRAND]</title>
-<meta name="description" content="Everything we make and source from Egyptian workshops, by category, quoted with UK delivery included.">
+<title>What we make | Warsha</title>
+<meta name="description" content="Statues, furniture, décor and LED lighting from trusted manufacturers in Egypt, delivered across the UK with one all-in price.">
+<meta property="og:title" content="What we make | Warsha">
+<meta property="og:description" content="Statues, furniture, décor and LED lighting from trusted manufacturers in Egypt, delivered across the UK with one all-in price.">
+<meta property="og:image" content="https://yassereyssir.github.io/FORZA/images/hero.jpg">
+<link rel="canonical" href="https://yassereyssir.github.io/FORZA/shop.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Alegreya+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body data-page="shop">
+<body>
 <a class="skip" href="#main">Skip to content</a>
-<header id="site-header"></header>
+<header class="site-header"><div class="wrap">
+<a class="logo" href="index.html">Warsha</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+<nav class="nav" id="main-nav" aria-label="Main">
+<a href="shop.html" aria-current="page">What we make</a>
+<a href="business.html">For businesses</a>
+<a href="commission.html">Custom requests</a>
+<a href="makers.html">Our manufacturers</a>
+<a href="how-it-works.html">How it works</a>
+<a class="btn btn--main" href="quote.html">Ask for a price</a>
+</nav></div></header>
 <main id="main">
 
-<section class="section"><div class="wrap">
-  <div class="stack" style="margin-bottom:40px"><h1>Shop by category</h1><p class="lead">Everything here is made or sourced to order by makers in Egypt and quoted with UK delivery included. Most items can be resized, recoloured or customised.</p></div>
-  <div class="grid grid--products" id="category-grid"></div>
+<section class="block"><div class="wrap">
+<div class="stack" style="margin-bottom:64px"><h1>What we make</h1><p class="lead">Everything is made to order by our partner manufacturers in Egypt, and the range grows each time we add a new one. Most pieces can be made bigger, smaller or in a different colour. Just ask.</p></div>
+<div class="rows" id="category-rows"></div>
+<div class="extras" id="category-extras"></div>
 </div></section>
-<section class="section section--white"><div class="wrap">
-  <div class="section-head"><h2>All items</h2></div>
-  <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
-  <div class="grid grid--products" id="product-grid" aria-live="polite"></div>
+<section class="block" style="padding-top:0"><div class="wrap">
+<h2 style="margin-bottom:40px">Pieces you can order</h2>
+<div class="items" id="all-items"></div>
 </div></section>
-<section class="section section--dark"><div class="wrap split">
-  <div class="stack"><h2>Can't find it?</h2></div>
-  <div class="stack"><p class="lead" style="color:#C9C7C0">Tell us what you're looking for. We'll make it with one of our workshops or find a new maker in Egypt.</p><div class="btn-row"><a class="btn btn--primary" href="commission.html">Start a request</a></div></div>
-</div></section>
+<section class="block dark"><div class="wrap split">
+<div class="stack"><h2>Questions? Just ask.</h2><p class="lead">You'll get a reply from a real person, usually the same day.</p></div>
+<div class="stack">
+<div class="btn-row"><a class="btn btn--main" href="quote.html">Ask for a price</a><a class="btn btn--line" data-whatsapp href="#">Message us on WhatsApp</a></div>
+<form class="signup" novalidate>
+<input type="hidden" name="form" value="new-products">
+<div class="field"><label for="signup-email">Get an email when we add new products</label><input id="signup-email" type="email" name="email" autocomplete="email" required></div>
+<input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn btn--line" type="submit">Sign up</button>
+<p class="signup__msg" role="status"></p>
+</form>
+</div></div></section>
 
 </main>
-<footer id="site-footer"></footer>
+<footer class="site-footer"><div class="wrap">
+<div class="stack"><a class="logo" href="index.html">Warsha</a><p>Made in Egypt by trusted manufacturers. Delivered across the UK. Based in London.</p></div>
+<ul aria-label="Pages"><li><a href="shop.html">What we make</a></li><li><a href="business.html">For businesses</a></li><li><a href="commission.html">Custom requests</a></li><li><a href="makers.html">Our manufacturers</a></li><li><a href="faq.html">Questions</a></li><li><a href="legal.html">Terms and privacy</a></li></ul>
+<ul aria-label="Contact"><li><a data-whatsapp href="#">WhatsApp us</a></li><li><a data-email href="#"></a></li><li><a href="quote.html">Ask for a price</a></li></ul>
+</div></footer>
 <script src="assets/config.js"></script>
 <script src="assets/products.js"></script>
 <script src="assets/main.js"></script>

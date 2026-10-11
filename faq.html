@@ -3,36 +3,64 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FAQ | [BRAND]</title>
-<meta name="description" content="What we sell, sourcing, lead times, UK taxes, payment, delivery and damage.">
+<title>Questions | Warsha</title>
+<meta name="description" content="Answers about delivery times, UK taxes, payment, damage and custom orders.">
+<meta property="og:title" content="Questions | Warsha">
+<meta property="og:description" content="Answers about delivery times, UK taxes, payment, damage and custom orders.">
+<meta property="og:image" content="https://yassereyssir.github.io/FORZA/images/hero.jpg">
+<link rel="canonical" href="https://yassereyssir.github.io/FORZA/faq.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Alegreya+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body data-page="faq">
+<body>
 <a class="skip" href="#main">Skip to content</a>
-<header id="site-header"></header>
+<header class="site-header"><div class="wrap">
+<a class="logo" href="index.html">Warsha</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+<nav class="nav" id="main-nav" aria-label="Main">
+<a href="shop.html">What we make</a>
+<a href="business.html">For businesses</a>
+<a href="commission.html">Custom requests</a>
+<a href="makers.html">Our manufacturers</a>
+<a href="how-it-works.html">How it works</a>
+<a class="btn btn--main" href="quote.html">Ask for a price</a>
+</nav></div></header>
 <main id="main">
 
-<section class="section"><div class="wrap">
-  <div class="stack" style="margin-bottom:40px"><h1>Questions</h1></div>
-  <div class="faq" style="max-width:860px">
-    <details><summary>What do you sell?</summary><p>Items made by independent workshops in Egypt. We started with sculpture, décor and furniture, and add new categories as we find great makers.</p></details>
-    <details><summary>Can you find something you don't list?</summary><p>Often, yes. Send a sourcing request and we'll look for a maker. Sourcing quotes take around <span data-sourcing-time></span>.</p></details>
-    <details><summary>How long does it take?</summary><p>Most items take around <span data-lead-time></span> from deposit to delivery. We confirm your date in the quote.</p></details>
-    <details><summary>Will I pay anything on delivery?</summary><p>No. Your quote includes UK import VAT, duty and delivery to your door.</p></details>
-    <details><summary>How do I pay?</summary><p>A deposit (usually 50%) to start, and the balance once you've approved photos of the finished item.</p></details>
-    <details><summary>What if it arrives damaged?</summary><p>Every order is packed and insured. Send photos within [48 hours] of delivery and we'll repair, replace or refund.</p></details>
-    <details><summary>Can I return it?</summary><p>Custom and made-to-order items can't be returned unless they're faulty. [Confirm your policy for unmodified shop items.]</p></details>
-    <details><summary>Can you make a famous character or brand?</summary><p>Only if you own the rights or have written permission. We decline requests that copy someone else's work.</p></details>
-    <!-- Add when lighting goes live:
-    <details><summary>Are electrical items safe to use in the UK?</summary><p>Every electrical item is built for UK mains and plugs and comes with [safety documentation].</p></details> -->
-  </div>
+<section class="block"><div class="wrap split">
+<h1>Questions</h1>
+<div class="faq">
+<details><summary>What do you sell?</summary><p>Products from trusted manufacturers in Egypt. Right now that's statues, furniture, décor and LED lighting, and we add more as we partner with new manufacturers.</p></details>
+<details><summary>How long does it take?</summary><p>Usually <span data-lead-time></span> from when you say go to when it arrives. We'll give you a date with your price.</p></details>
+<details><summary>Will I have to pay anything when it arrives?</summary><p>No. Your price includes shipping, UK import VAT, duty and delivery.</p></details>
+<details><summary>How do I pay?</summary><p>Nothing is paid on this website. Once you're happy with your price, we'll agree how and when you pay directly with you.</p></details>
+<details><summary>Can I see it before it ships?</summary><p>Yes. Our trusted colleagues in Egypt check every finished piece and send you photos and a video. It only ships once you're happy.</p></details>
+<details><summary>What if it arrives damaged?</summary><p>Everything is packed and insured. Send us photos within 48 hours of delivery and we'll repair, replace or refund it.</p></details>
+<details><summary>Can I return it?</summary><p>Pieces made to your size, colour or design can't be returned unless they're faulty, because they're made just for you.</p></details>
+<details><summary>Can you find something you don't list?</summary><p>Often, yes. Send us a custom request and we'll look for a maker. It usually takes <span data-sourcing-time></span> to come back with a price.</p></details>
+</div>
 </div></section>
+<section class="block dark"><div class="wrap split">
+<div class="stack"><h2>Questions? Just ask.</h2><p class="lead">You'll get a reply from a real person, usually the same day.</p></div>
+<div class="stack">
+<div class="btn-row"><a class="btn btn--main" href="quote.html">Ask for a price</a><a class="btn btn--line" data-whatsapp href="#">Message us on WhatsApp</a></div>
+<form class="signup" novalidate>
+<input type="hidden" name="form" value="new-products">
+<div class="field"><label for="signup-email">Get an email when we add new products</label><input id="signup-email" type="email" name="email" autocomplete="email" required></div>
+<input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn btn--line" type="submit">Sign up</button>
+<p class="signup__msg" role="status"></p>
+</form>
+</div></div></section>
 
 </main>
-<footer id="site-footer"></footer>
+<footer class="site-footer"><div class="wrap">
+<div class="stack"><a class="logo" href="index.html">Warsha</a><p>Made in Egypt by trusted manufacturers. Delivered across the UK. Based in London.</p></div>
+<ul aria-label="Pages"><li><a href="shop.html">What we make</a></li><li><a href="business.html">For businesses</a></li><li><a href="commission.html">Custom requests</a></li><li><a href="makers.html">Our manufacturers</a></li><li><a href="faq.html">Questions</a></li><li><a href="legal.html">Terms and privacy</a></li></ul>
+<ul aria-label="Contact"><li><a data-whatsapp href="#">WhatsApp us</a></li><li><a data-email href="#"></a></li><li><a href="quote.html">Ask for a price</a></li></ul>
+</div></footer>
 <script src="assets/config.js"></script>
 <script src="assets/products.js"></script>
 <script src="assets/main.js"></script>

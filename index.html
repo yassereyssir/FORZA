@@ -3,83 +3,115 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>[BRAND] | Made in Egypt, delivered across the UK</title>
-<meta name="description" content="Sculpture, décor, custom furniture and more, made to order by independent Egyptian workshops and delivered across the UK with taxes included.">
+<title>Warsha | Handmade in Egypt, delivered across the UK</title>
+<meta name="description" content="Statues, furniture, décor, LED lighting and more from trusted manufacturers in Egypt, checked before they ship and delivered across the UK. One price, including UK taxes.">
+<meta property="og:title" content="Warsha | Handmade in Egypt, delivered across the UK">
+<meta property="og:description" content="Statues, furniture, décor, LED lighting and more from trusted manufacturers in Egypt, checked before they ship and delivered across the UK. One price, including UK taxes.">
+<meta property="og:image" content="https://yassereyssir.github.io/FORZA/images/hero.jpg">
+<link rel="canonical" href="https://yassereyssir.github.io/FORZA/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Alegreya+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body data-page="home">
+<body>
 <a class="skip" href="#main">Skip to content</a>
-<header id="site-header"></header>
+<header class="site-header"><div class="wrap">
+<a class="logo" href="index.html">Warsha</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+<nav class="nav" id="main-nav" aria-label="Main">
+<a href="shop.html">What we make</a>
+<a href="business.html">For businesses</a>
+<a href="commission.html">Custom requests</a>
+<a href="makers.html">Our manufacturers</a>
+<a href="how-it-works.html">How it works</a>
+<a class="btn btn--main" href="quote.html">Ask for a price</a>
+</nav></div></header>
 <main id="main">
 
 <section class="hero"><div class="wrap">
-  <div class="stack">
-    <p class="hero__kicker">Made in Egypt, delivered across the UK</p>
-    <h1>Made in Egypt. Made for you.</h1>
-    <p class="lead">We work with independent Egyptian workshops to bring you pieces you won't find on the high street - starting with statement sculpture, décor and custom furniture, with new makers added all the time. One quote covers making, shipping, UK taxes and delivery.</p>
-    <div class="btn-row"><a class="btn btn--primary" href="quote.html">Get a quote</a><a class="btn btn--outline" href="shop.html">Shop by category</a></div>
-  </div>
-  <div class="hero__media"><!-- Replace with: <img src="images/hero.jpg" alt="..."> - rotate in your newest category -->
-    <div class="ph ph--tag">Hero photo: an item from your newest category, in a real UK setting</div>
-  </div>
+<div class="stack">
+<h1>Made in Egypt by trusted manufacturers, delivered to your door in the UK</h1>
+<p class="lead">We partner with reputable manufacturers in Egypt, each an expert in what they make. Tell us what you're looking for and we'll send you one price that covers everything, from the factory floor to your door.</p>
+<div class="btn-row"><a class="btn btn--main" href="quote.html">Ask for a price</a><a class="btn btn--line" href="shop.html">See what we make</a></div>
+<p class="hero__note">Nothing is paid on this website. We agree everything with you first.</p>
+</div>
+<div class="arch"><img src="images/hero.jpg" alt="A piece made by one of our partner manufacturers in Egypt" data-fallback=""></div>
 </div></section>
 
-<section class="trust section--dark" aria-label="What's included"><div class="wrap">
-  <div><strong>Made or sourced to order</strong><span>Your size, colour and finish</span></div>
-  <div><strong>All-in UK pricing</strong><span>Shipping and import taxes included</span></div>
-  <div><strong>Checked before dispatch</strong><span>Photos and video sent for approval</span></div>
-  <div><strong>Packed and insured</strong><span>Covered from workshop to your door</span></div>
+<div class="wrap"><hr class="rule"><div class="facts">
+<p><strong>Based in London</strong>Questions answered by a real person, on WhatsApp or email.</p>
+<p><strong>Trusted manufacturers</strong>Established makers who are experts in their craft, checked by our colleagues in Egypt before anything ships.</p>
+<p><strong>One price, no surprises</strong>It covers making, shipping, UK import taxes and delivery.</p>
+</div><hr class="rule"></div>
+
+<section class="block"><div class="wrap">
+<div class="stack" style="margin-bottom:64px"><h2>What we make</h2><p class="lead">This is what our partner manufacturers make today. Every new manufacturer we partner with adds more to the list.</p></div>
+<div class="rows" id="category-rows"></div>
+<div class="extras" id="category-extras"></div>
 </div></section>
 
-<section class="section"><div class="wrap">
-  <div class="section-head"><h2>Shop by category</h2><a href="shop.html"><strong>See everything</strong></a></div>
-  <div class="grid grid--products" id="category-grid" data-limit="3"></div>
-</div></section>
-
-<section class="section" style="padding-top:0"><div class="wrap grid grid--3">
-  <div class="path"><p class="path__label">For homes</p><h3>Pieces with a story, made for your space</h3><p>Pick from the shop or ask for a custom version.</p><a href="shop.html">Shop for your home</a></div>
-  <div class="path path--blue"><p class="path__label">For businesses</p><h3>Sourcing from Egypt, without the hassle</h3><p>Statement pieces, furniture, lighting and branded items for venues, shops and events.</p><a href="business.html">Talk to us about your project</a></div>
-  <div class="path path--dark"><p class="path__label">Commission or source</p><h3>Have something in mind?</h3><p>If it can be made in Egypt, we'll find the maker.</p><a href="commission.html">Start a request</a></div>
-</div></section>
-
-<section class="section section--white"><div class="wrap split">
-  <div class="stack"><h2>Independent workshops across Egypt</h2></div>
-  <div class="stack"><p class="lead">From fibreglass studios to furniture makers. We visit, check every piece and handle everything between them and you.</p><p><a href="makers.html"><strong>Meet our makers</strong></a></p></div>
-</div></section>
-
-<section class="section"><div class="wrap stack" style="gap:40px">
-  <h2>How it works</h2>
-  <ol class="steps">
-<li><strong>Tell us what you want</strong><span>Choose a piece or describe your idea, size and deadline.</span></li>
-<li><strong>Get one all-in quote</strong><span>Making, packing, shipping, UK taxes and delivery in one price.</span></li>
-<li><strong>Pay a 50% deposit</strong><span>Production or sourcing starts.</span></li>
-<li><strong>Approve it before it ships</strong><span>We check the finished item in Egypt and send you photos and video.</span></li>
-<li><strong>Pay the balance</strong><span>We pack it, insure it and ship it.</span></li>
-<li><strong>Delivered to your door</strong><span>Usually around <span data-lead-time></span> from deposit.</span></li>
-</ol>
-</div></section>
-
-<section class="section section--dark"><div class="wrap split">
-  <div class="stack"><h2>Be first to see new makers</h2><p style="color:#C9C7C0">We add new categories as we find great workshops. One short email when something new goes live.</p></div>
-  <form class="signup" method="POST" novalidate>
-  <input type="hidden" name="form" value="new-arrivals">
-  <div class="field"><label for="signup-home">Email</label><input id="signup-home" type="email" name="email" autocomplete="email" required></div>
-  <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-  <button class="btn btn--primary" type="submit">Keep me posted</button>
-  <p class="signup__msg" role="status"></p>
+<section class="block dark"><div class="wrap split">
+<div class="stack"><h2>Can't find what you need? Ask us.</h2><p class="lead">Tell us what you're looking for, whatever it is. If a manufacturer in Egypt makes it, we'll try to find them and supply it to you.</p><p class="small muted">We usually come back within <span data-sourcing-time></span>.</p></div>
+<form class="request" id="request-form" novalidate>
+<input type="hidden" name="form" value="sourcing-request">
+<div class="field"><label for="r-what">What are you looking for?</label><textarea id="r-what" name="looking_for" placeholder="For example, 50 brass lanterns for a wedding, or a marble table top" required></textarea></div>
+<div class="field"><label for="r-email">Your email</label><input id="r-email" name="email" type="email" autocomplete="email" required></div>
+<input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="btn-row"><button class="btn btn--main" type="submit">Send my request</button></div>
+<p class="request__msg" role="status"></p>
 </form>
 </div></section>
 
-<section class="section"><div class="wrap split">
-  <div class="stack"><h2>Ready for a price?</h2><p class="lead">Tell us what you're after. We reply within <span data-reply-time></span> with an all-in UK price.</p></div>
-  <div class="stack" style="justify-content:center"><div class="btn-row"><a class="btn btn--primary" href="quote.html">Get a quote</a><a class="btn btn--outline" data-whatsapp href="#">Message us on WhatsApp</a></div></div>
+<section class="block"><div class="wrap split">
+<div class="stack"><h2>How ordering works</h2><p class="muted">No online checkout and no surprises. You talk to us, we send a price, and nothing happens until you agree.</p></div>
+<ol class="steps">
+<li><strong>Tell us what you'd like</strong><span>Pick something from the site or describe your idea. A photo or a rough sketch helps.</span></li>
+<li><strong>Get one full price</strong><span>Within <span data-reply-time></span> we send a price that covers making, shipping, UK taxes and delivery. Nothing extra to pay when it arrives.</span></li>
+<li><strong>We check it before it leaves</strong><span>When it's finished, our trusted colleagues in Egypt check it and send you photos and a video. Nothing ships until you're happy with it.</span></li>
+<li><strong>It arrives at your door</strong><span>Packed, insured and delivered, usually <span data-lead-time></span> after you say go.</span></li>
+</ol>
 </div></section>
 
+<section class="block dark"><div class="wrap split">
+<h2>Who makes it</h2>
+<div class="stack"><p class="lead">We only work with well-established manufacturers in Egypt with a strong reputation in their field, from fibreglass statues to LED lighting.</p><p class="lead">We vet them, our colleagues check the work, and we handle the shipping and paperwork, so you deal with one business in the UK.</p><p><a href="makers.html">About our manufacturers</a></p></div>
+</div></section>
+
+<section class="block"><div class="wrap split">
+<h2>For cafés, shops and events</h2>
+<div class="stack"><p class="lead">A statue at the door, a run of matching tables, planters for a terrace. We quote business orders the same way, with one invoice and delivery timed to your opening.</p><p><a href="business.html">Ordering for a business</a></p></div>
+</div></section>
+
+<section class="block" style="padding-top:0"><div class="wrap split">
+<h2>Why we started</h2>
+<div class="note">
+<p>Egypt has manufacturers who are genuinely excellent at what they do, and very little of what they make reaches the UK.</p>
+<p>Buying direct from abroad is hard. You can't see the work, shipping is a gamble, and import fees turn up on the doorstep. So we do that part. We speak to the manufacturers in Arabic, have every piece checked before it leaves, and give you one price that covers everything.</p>
+<p>If you have a question, message us. You'll get an answer from us, not a bot.</p>
+<p class="note__sign">The Warsha team, London</p>
+</div>
+</div></section>
+
+<section class="block dark"><div class="wrap split">
+<div class="stack"><h2>Questions? Just ask.</h2><p class="lead">You'll get a reply from a real person, usually the same day.</p></div>
+<div class="stack">
+<div class="btn-row"><a class="btn btn--main" href="quote.html">Ask for a price</a><a class="btn btn--line" data-whatsapp href="#">Message us on WhatsApp</a></div>
+<form class="signup" novalidate>
+<input type="hidden" name="form" value="new-products">
+<div class="field"><label for="signup-email">Get an email when we add new products</label><input id="signup-email" type="email" name="email" autocomplete="email" required></div>
+<input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn btn--line" type="submit">Sign up</button>
+<p class="signup__msg" role="status"></p>
+</form>
+</div></div></section>
+
 </main>
-<footer id="site-footer"></footer>
+<footer class="site-footer"><div class="wrap">
+<div class="stack"><a class="logo" href="index.html">Warsha</a><p>Made in Egypt by trusted manufacturers. Delivered across the UK. Based in London.</p></div>
+<ul aria-label="Pages"><li><a href="shop.html">What we make</a></li><li><a href="business.html">For businesses</a></li><li><a href="commission.html">Custom requests</a></li><li><a href="makers.html">Our manufacturers</a></li><li><a href="faq.html">Questions</a></li><li><a href="legal.html">Terms and privacy</a></li></ul>
+<ul aria-label="Contact"><li><a data-whatsapp href="#">WhatsApp us</a></li><li><a data-email href="#"></a></li><li><a href="quote.html">Ask for a price</a></li></ul>
+</div></footer>
 <script src="assets/config.js"></script>
 <script src="assets/products.js"></script>
 <script src="assets/main.js"></script>

@@ -1,76 +1,64 @@
 /* ==========================================================
    CATEGORIES & PRODUCTS - the whole catalogue lives here.
 
-   To add a new category (e.g. when a new maker is found):
-   1. Add an entry to CATEGORIES with status "live" (or "soon" to tease it).
-   2. Add its products to PRODUCTS with the same category id.
-   Run the new-category checklist in the site plan before going live.
+   CATEGORIES
+   - status: "live" shows it, "soon" shows it as coming soon
+   - image: a file in /images (e.g. "statues.jpg"). If the file
+     isn't uploaded yet, a plain colour panel shows instead.
 
-   Only list original designs - never copies of known characters or logos.
-   Only use your own photos (put files in /images).
+   PRODUCTS
+   - A product only appears once it has an image. That keeps
+     the site free of empty "photo coming soon" boxes.
+   - specs: any labels you like, e.g. Power: "UK plug" for lights.
+
+   Only list original designs, and only use your own photos.
    ========================================================== */
 window.CATEGORIES = [
   {
-    id: "sculpture",
-    name: "Statement sculpture",
-    status: "live",                     // live | soon
-    image: "Test-1.jpg",
-    priceBand: "Typically £[X]-£[Y]",
-    maker: "Fibreglass studios in Egypt",
-    intro: "Life-size fibreglass figures and animals for gardens, homes and venues. Weatherproof finishes in any colour."
+    id: "statues",
+    name: "Statues",
+    status: "live",
+    image: "statues.jpg",
+    priceBand: "Usually £250 to £1,000",
+    intro: "Large fibreglass figures and animals, finished and painted by hand. They work indoors or out, and we can make them in your colours."
+  },
+  {
+    id: "furniture",
+    name: "Furniture",
+    status: "live",
+    image: "furniture.jpg",
+    priceBand: "Priced to your design",
+    intro: "Tables, seating and display pieces made to your measurements. Send us a drawing, a photo or a rough idea."
   },
   {
     id: "decor",
     name: "Décor and planters",
     status: "live",
-    image: "Test-2.jpg",
-    priceBand: "Typically £[X]-£[Y]",
-    maker: "Fibreglass studios in Egypt",
-    intro: "Oversized planters and sculptural décor that turn a corner into a feature. Sold singly or as sets."
-  },
-  {
-    id: "furniture",
-    name: "Omars a wanker",
-    status: "live",
-    image: "",
-    priceBand: "Quoted to your spec",
-    maker: "Furniture workshops in Egypt",
-    intro: "Tables, seating and display pieces made to your drawings or brief."
+    image: "decor.jpg",
+    priceBand: "Usually £250 to £800",
+    intro: "Big planters and decorative pieces that make a corner, a doorway or a terrace feel finished."
   },
   {
     id: "lighting",
     name: "LED lighting",
-    status: "soon",
-    image: "",
-    priceBand: "",
-    maker: "",
-    intro: "Custom signs, neon-style pieces and lamps for homes, shops, weddings and events. Built for UK plugs."
+    status: "live",
+    image: "lighting.jpg",
+    priceBand: "Priced to your design",
+    intro: "Custom light-up signs, neon-style pieces and lamps for homes, shops, weddings and events. Made for UK plugs."
   }
 ];
 
 window.PRODUCTS = [
+  /* Example - add an image to make it appear:
   {
-    id: "statement-figure", category: "sculpture", name: "Statement figure", image: "", priceFrom: null,
-    specs: { Dimensions: "1m / 1.5m / 2m tall", Material: "Fibreglass, hand-finished", Finish: "Gloss lacquer, any colour", Use: "Indoor or outdoor" },
-    leadTime: "[X-Y] weeks",
-    description: "A bold, life-size figure that anchors a room, garden or venue entrance. Made to order in your choice of colour."
+    id: "garden-lion",               // unique, no spaces
+    category: "statues",             // must match a category id
+    name: "Garden lion",
+    image: "garden-lion.jpg",        // file in /images
+    priceFrom: 450,                  // or null for "Ask for a price"
+    leadTime: "6-8 weeks",
+    description: "A life-size lion for a garden or entrance, finished in weatherproof paint.",
+    specs: { Height: "1.2m", Material: "Fibreglass", Finish: "Any colour", Use: "Indoor or outdoor" }
   },
-  {
-    id: "animal-sculpture", category: "sculpture", name: "Animal sculpture", image: "", priceFrom: null,
-    specs: { Dimensions: "1m / 1.5m tall", Material: "Fibreglass, hand-finished", Finish: "Weatherproof paint", Use: "Garden or indoor" },
-    leadTime: "[X-Y] weeks",
-    description: "Oversized animal pieces in bright, weatherproof finishes. A favourite for gardens, play spaces and café terraces."
-  },
-  {
-    id: "oversized-planter", category: "decor", name: "Oversized planter", image: "", priceFrom: null,
-    specs: { Dimensions: "80cm / 1.2m tall", Material: "Fibreglass", Finish: "Gold, matte or custom colour", Use: "Indoor or outdoor" },
-    leadTime: "[X-Y] weeks",
-    description: "Sculptural planters that turn a single plant into a feature. Sold singly or as a set."
-  },
-  {
-    id: "custom-table", category: "furniture", name: "Made-to-measure table", image: "", priceFrom: null,
-    specs: { Dimensions: "Made to your measurements", Material: "To your brief", Finish: "To your brief", Use: "Indoor" },
-    leadTime: "[X-Y] weeks",
-    description: "Dining, coffee or display tables made to your drawings by our partner workshops."
-  }
+  */
 ];

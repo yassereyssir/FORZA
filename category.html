@@ -3,31 +3,53 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Category | [BRAND]</title>
-<meta name="description" content="Made to order in Egypt, delivered across the UK.">
+<title>Category | Warsha</title>
+<meta name="description" content="Pieces from trusted manufacturers in Egypt, delivered across the UK.">
+<meta property="og:title" content="Category | Warsha">
+<meta property="og:description" content="Pieces from trusted manufacturers in Egypt, delivered across the UK.">
+<meta property="og:image" content="https://yassereyssir.github.io/FORZA/images/hero.jpg">
+<link rel="canonical" href="https://yassereyssir.github.io/FORZA/category.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Alegreya+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body data-page="shop">
+<body>
 <a class="skip" href="#main">Skip to content</a>
-<header id="site-header"></header>
+<header class="site-header"><div class="wrap">
+<a class="logo" href="index.html">Warsha</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+<nav class="nav" id="main-nav" aria-label="Main">
+<a href="shop.html" aria-current="page">What we make</a>
+<a href="business.html">For businesses</a>
+<a href="commission.html">Custom requests</a>
+<a href="makers.html">Our manufacturers</a>
+<a href="how-it-works.html">How it works</a>
+<a class="btn btn--main" href="quote.html">Ask for a price</a>
+</nav></div></header>
 <main id="main">
 
-<section class="section"><div class="wrap" id="category-page">
-  <p style="margin-bottom:24px"><a href="shop.html">All categories</a></p>
-  <div class="stack" style="margin-bottom:40px">
-    <h1 id="c-name">Loading...</h1>
-    <p class="lead" id="c-intro"></p>
-    <p><strong id="c-band"></strong> <span id="c-maker"></span> <a href="makers.html">Meet the makers</a></p>
-  </div>
-  <div class="grid grid--products" id="product-grid" data-category="pending"></div>
-  <div class="path" style="margin-top:48px"><h3>Want something different?</h3><p>We can make it to your size, colour and spec.</p><a id="c-custom" href="quote.html">Request a custom piece</a></div>
+<section class="block"><div class="wrap" id="category-page">
+<p style="margin-bottom:32px"><a href="shop.html">Back to everything we make</a></p>
+<div class="product">
+<div id="c-image"></div>
+<div class="stack">
+<h1 id="c-name">Loading</h1>
+<p class="lead" id="c-intro"></p>
+<p class="muted" id="c-price"></p>
+<div class="btn-row"><a class="btn btn--main" id="c-ask" href="quote.html">Ask for a price</a><a class="btn btn--line" href="commission.html">Tell us your idea</a></div>
+<p class="small muted">Nothing is paid on this website. We agree everything with you first.</p>
+</div></div>
+<h2 style="margin:96px 0 40px">Pieces</h2>
+<div class="items" id="c-items"></div>
 </div></section>
 
 </main>
-<footer id="site-footer"></footer>
+<footer class="site-footer"><div class="wrap">
+<div class="stack"><a class="logo" href="index.html">Warsha</a><p>Made in Egypt by trusted manufacturers. Delivered across the UK. Based in London.</p></div>
+<ul aria-label="Pages"><li><a href="shop.html">What we make</a></li><li><a href="business.html">For businesses</a></li><li><a href="commission.html">Custom requests</a></li><li><a href="makers.html">Our manufacturers</a></li><li><a href="faq.html">Questions</a></li><li><a href="legal.html">Terms and privacy</a></li></ul>
+<ul aria-label="Contact"><li><a data-whatsapp href="#">WhatsApp us</a></li><li><a data-email href="#"></a></li><li><a href="quote.html">Ask for a price</a></li></ul>
+</div></footer>
 <script src="assets/config.js"></script>
 <script src="assets/products.js"></script>
 <script src="assets/main.js"></script>
